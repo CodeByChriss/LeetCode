@@ -6,7 +6,7 @@ class Solution {
         int f=0,k=0;
 
         for(int i = 0; i<mayor*2;i++){
-            if(i == 0 || i % 2 == 0){
+            if(i == 0 || i % 2 == 0 || k >= word2.length()){
                 if(f< word1.length()){
                     devolver += word1.charAt(f);
                     f++;
