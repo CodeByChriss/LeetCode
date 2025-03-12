@@ -1,6 +1,6 @@
 class Solution {
     public int lengthOfLastWord(String s) {
-        String word="";
+        int cnt=0;
         boolean space = true;
 
         for(int i = 0; i<s.length(); i++){
@@ -8,14 +8,14 @@ class Solution {
                 space = true;
             }else{
                 if(space){
-                    word = "";
+                    cnt=0;
                     space = false;
                 }
 
-                word+=s.charAt(i);
+                cnt++;
             }
         }
 
-        return word.length();
+        return cnt;
     }
 }
