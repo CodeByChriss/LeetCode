@@ -6,8 +6,8 @@ class Solution {
                 mid = String.valueOf(low).length() / 2;
                 p1=p2=0;
                 for(int i = 0; i<mid; i++){
-                    p1 += Integer.parseInt(String.valueOf(String.valueOf(low).charAt(i)));
-                    p2 += Integer.parseInt(String.valueOf(String.valueOf(low).charAt(mid+i)));
+                    p1 += String.valueOf(low).charAt(i);
+                    p2 += String.valueOf(low).charAt(mid+i);
                 }
                 if(p1 == p2)
                     cnt++;
